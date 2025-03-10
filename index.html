@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nugget Launcher</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .launcher {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button {
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="launcher">
+        <button class="button" onclick="openWindow('https://9872.hahn-itc.de/')">Launch Rammerhead</button>
+        <button class="button" onclick="openWindow('https://6922.yugadiluitel.com.np/')">Launch Shadow</button>
+        <button class="button" onclick="openWindow('https://xyz.zaylovesparker.xyz/')">Launch Interstellar</button>
+        <button class="button" onclick="openWindow('https://mapper.netinfotechnology.com/')">Launch Incognito</button>
+        <button class="button" onclick="openWindow('https://sci.brain.musictherapyinscotland.com/')">Launch Utopia</button>
+        <button class="button" onclick="openWindow('https://trixmatri2.vercel.app/')">Launch Shuttle</button>
+        <button class="button" onclick="openWindow('https://idontlikeschool.vercel.app/')">Launch Doge V4</button>
+        <button class="button" onclick="openWindow('https://nyx-v1.vercel.app')">Launch Nyx V1</button>
+        <button class="button" onclick="openWindow('https://chompysurf-port-93284792829387493274932.koyeb.app/')">Launch Ultraviolet</button>
+        <button class="button" onclick="openWindow('https://nettleweb.pages.dev/')">Launch Nettleweb</button>
+    </div>
+
+    <script>
+        function openWindow(url) {
+            window.open(url, '_blank', 'width=800,height=600');
+        }
+    </script>
+</body>
+</html>
